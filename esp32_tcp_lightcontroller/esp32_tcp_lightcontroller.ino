@@ -5,8 +5,8 @@
 #include <WiFiClient.h>
 
 // WiFi credentials
-const char* ssid = "Innovatic IOTHouse";
-const char* password = "saiIIH2024";
+const char* ssid = "yourssid";
+const char* password = "yourpassword";
 
 // TCP Server settings
 const int TCP_PORT = 8080;
