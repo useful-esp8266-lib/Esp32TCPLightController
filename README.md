@@ -114,6 +114,38 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print(s.recv(1024).decode())
 ```
 
+### Python & PyQt Install Guide
+
+1. **Install Python (if not already installed):**
+   - Download and install Python from [python.org](https://www.python.org/downloads/).
+   - Make sure to check the option to "Add Python to PATH" during installation.
+
+2. **Install PyQt5 using pip:**
+   - Open your terminal or command prompt.
+   - Run the following command:
+     ```
+     pip install PyQt5
+     ```
+
+3. **Download the PyQt client script:**
+   - In the repository, there is a file named `pyqt_light_controller.py` which is likely the PyQt client for controlling the ESP32 TCP Light Controller.
+   - Download this file from:  
+     [pyqt_light_controller.py](https://github.com/useful-esp8266-lib/Esp32TCPLightController/blob/main/pyqt_light_controller.py)
+
+4. **Run the PyQt client:**
+   - Navigate to the directory where you saved `pyqt_light_controller.py`.
+   - Execute the script with:
+     ```
+     python pyqt_light_controller.py
+     ```
+
+5. **Additional Dependencies:**
+   - If the script requires any other modules, you will see an ImportError when running it. Install any missing dependencies using pip (e.g., `pip install <module_name>`).
+
+
+
+
+
 ## License
 
 MIT License
@@ -123,7 +155,7 @@ MIT License
 ## Credits
 
 - [useful-esp8266-lib/Esp32TCPLightController](https://github.com/useful-esp8266-lib/Esp32TCPLightController)
-- Inspired by ESP8266/ESP32 DIY IoT automation projects
+- Inspired by ESP8266/ESP32 DIY IoT automation project
 
 ---
 
